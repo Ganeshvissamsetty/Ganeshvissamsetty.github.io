@@ -62,35 +62,49 @@
         width: 100%;
         margin-top: 40px;
     }
-        
+     img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
 
-.about-image {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        margin-top: 10px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        .about-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-left: 20px; /* Margin between text and image */
+        }
+
     }
         @media (max-width: 768px) {
-        .container {
-            padding: 10px;
-        }
-        
-        header {
-            padding: 15px 0;
-        }
-        
-        nav a {
-            margin: 0 10px;
-        }
-            /* Enhance the look of section headers */
-    section h2:hover {
-        color: #ffb400;
-        transition: color 0.3s ease;
-    }
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 15px 0;
+            }
+            
+            nav a {
+                margin: 0 10px;
+            }
 
+            .about-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .about-image {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
     /* Project cards for a modern look */
     .project {
         padding: 15px;
